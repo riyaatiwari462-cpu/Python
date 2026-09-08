@@ -1,0 +1,8 @@
+N,X=map(int,input().split())   #5,3(5:Students, 3:Subjects)
+Allmarks=[]
+for i in range(X):
+    Smarks=map(float,input().split())
+    Allmarks.append(Smarks)
+for i in zip(*Allmarks):
+    print(sum(i)/len(i))
+    
